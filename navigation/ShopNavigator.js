@@ -81,13 +81,13 @@ const ProfileNavigator = createStackNavigator(
     },
     defaultNavigationOptions: defaultNavOptions,
   }
-)
+);
 
 const ShopNavigator = createDrawerNavigator(
   {
     Products: ProductsNavigator,
     Orders: OrdersNavigator,
-    "My Profile": ProfileNavigator
+    "My Profile": ProfileNavigator,
   },
   {
     contentOptions: {

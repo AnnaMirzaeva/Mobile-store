@@ -36,9 +36,8 @@ export default (state = initialState, action) => {
       const selectedCartItem = state.items[action.pid];
       const currentQty = state.items[action.pid].quantity;
       let updatedCartItems;
-      const totalAmount = state.totalAmount - selectedCartItem.productPrice
+      const totalAmount = state.totalAmount - selectedCartItem.productPrice;
       if (currentQty > 1) {
-        // need to reduce it, not erase it
         const updatedCartItem = new CartItem(
           selectedCartItem.quantity - 1,
           selectedCartItem.productPrice,

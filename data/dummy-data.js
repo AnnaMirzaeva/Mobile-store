@@ -31,7 +31,7 @@ const PRODUCTS = [
     "Jacket",
     "https://img.joomcdn.net/c7910393e8c828a4b91455049930183063a64115_original.jpeg",
     "Men's Fashion Denim Jacket Winter Warm Wool Denim Jacket Fashion Men's Denim Jacket XS-6XL",
-    118.50
+    118.5
   ),
   new Product(
     "p5",

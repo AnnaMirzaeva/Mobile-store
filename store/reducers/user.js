@@ -14,13 +14,11 @@ export default (state = initialState, action) => {
         (user) =>
           user.login === action.email && user.password === action.password
       );
-      console.log(user);
 
       if (user) {
         const information = USERSINFORMATION.find(
           (info) => info.login === user.login
         );
-        console.log(information);
 
         if (information) {
           return {

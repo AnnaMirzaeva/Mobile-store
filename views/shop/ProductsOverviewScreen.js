@@ -9,7 +9,6 @@ import * as cartActions from "../../store/actions/cart.js";
 
 import { SearchBar } from "react-native-elements";
 import { View } from "react-native";
-import { setStatusBarBackgroundColor } from "expo-status-bar";
 import Colors from "../../constants/Colors.js";
 
 const ProductsOverviewScreen = (props) => {

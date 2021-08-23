@@ -21,7 +21,6 @@ const LogInScreen = (props) => {
 
   useEffect(() => {
     if (isAuthenticated) {
-      console.log('here')
       navigate("UserProfile");
     }
   });

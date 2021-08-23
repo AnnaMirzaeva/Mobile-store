@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Text, View, StyleSheet, Image, Platform, Button } from "react-native";
 import { HeaderButtons, Item } from "react-navigation-header-buttons";
 import { useDispatch, useSelector } from "react-redux";
 import CustomHeaderButton from "../../components/UI/HeaderButton.js";
 import Colors from "../../constants/Colors.js";
-import { userInformation } from "../../models/userInformation.js";
 import * as userActions from "../../store/actions/user.js";
 
 const UserProfileScreen = (props) => {
@@ -14,7 +13,7 @@ const UserProfileScreen = (props) => {
 
   const logout = () => {
     dispatch(userActions.Logout());
-  }
+  };
 
   const renderView = () => {
     return (
@@ -33,11 +32,7 @@ const UserProfileScreen = (props) => {
         <Text style={styles.userLastName}>{user.userInformation.lastName}</Text>
         <Text style={styles.userAddress}>{user.userInformation.address}</Text>
         <View style={styles.logOutButton}>
-          <Button 
-            color={Colors.accent} 
-            title="Log Out"
-            onPress={logout} 
-        />
+          <Button color={Colors.accent} title="Log Out" onPress={logout} />
         </View>
       </View>
     );
